@@ -119,10 +119,21 @@ var latCyr = {
 };
 
 function onLatinTextChange(txt) {
-    var cyrillicTextareaElem = document.getElementById("cyrillic_textarea");
-    var div = document.createElement("div");
-    var cyrillicHtmlEntities = getCyrillicText(txt);
-    div.innerHTML = cyrillicHtmlEntities;
-    cyrillicTextareaElem.value = div.innerText;
+            var cyrillicTextareaElem = document.getElementById("cyrillic_textarea");
+            var div = document.createElement("div");
+            var cyrillicHtmlEntities = getCyrillicText(txt);
+            div.innerHTML = cyrillicHtmlEntities;
+            cyrillicTextareaElem.value = div.innerText;
 
-}
+        }
+
+        function select(textareaName) {
+            var textareaElem = document.converter_form[textareaName];
+            textareaElem.select();
+        }
+        function clear1(textareaName) {
+            var textareaElems = document.getElementsByTagName('textarea');
+            for (var n = textareaElems.length, i = 0; i < n; i++)
+                textareaElems[i].value = "";
+        }
+
