@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Ўzbeк тилi — dавлаt тиli</title>
+    <title>Lotindan — Кирилга</title>
     <meta charset="utf-8"/>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport"
@@ -20,21 +20,20 @@
 <body>
 <div class="container">
     <br>
-    <h4 class="sr-only">¯\_(ツ)_/¯</h4>
-    <br>
+    <h4 class="sr-only">Лотин алифбосидаги матнни кирил алифбосига ўтказиш</h4>
+    
     <h6>Lotin alifbosidagi matnni kiril alifbosiga o'tkazish</h6>
+    <hr>
+    <br>
+
     <form name="converter_form" onsubmit="return false;">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12">
 
                 <p class="text-center">
+                    
                     <button
-                            id="redo_btn"
-                            type="button"
-                            class="btn btn-sm btn-warning">Hammasini belgilash (Выделить все)
-                    </button>
-                    <button
-                            onclick="clear1(); humane.log('✔ Removed');"
+                            onclick="clear1(); humane.log('✔ Очищено');"
                             class="btn btn-sm btn-outline-danger">Tozalash (Очистить)</button>
                 </p>
                 <textarea
@@ -47,12 +46,12 @@
             </div>
             <p class="clearfix visible-xs"></p>
 
-            <div class="col-md-6">
+            <div class="col-md-12">
 
                 <p class="text-center">
                     <button
                             onclick="select('cyrillic_textarea'); document.execCommand('copy'); humane.log('✅ Скопровано');"
-                            class="btn btn-sm btn-primary">Hammasini belgilash (Выделить все)</button>
+                            class="btn btn-sm btn-primary">Nusxa olish (Копировать)</button>
                     <button
                             onclick="clear1(); humane.log('✔ Removed');"
                             class="btn btn-sm btn-outline-danger">Tozalash (Очистить)</button>
