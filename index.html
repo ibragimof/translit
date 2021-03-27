@@ -29,11 +29,12 @@
 
                 <p class="text-center">
                     <button
-                            onclick="select('latin_textarea')"
+                            id="redo_btn"
+                            type="button"
                             class="btn btn-sm btn-warning">Hammasini belgilash (Выделить все)
                     </button>
                     <button
-                            onclick="clear1()"
+                            onclick="clear1(); humane.log('✔ Removed');"
                             class="btn btn-sm btn-outline-danger">Tozalash (Очистить)</button>
                 </p>
                 <textarea
@@ -50,10 +51,10 @@
 
                 <p class="text-center">
                     <button
-                            onclick="select('cyrillic_textarea')"
+                            onclick="select('cyrillic_textarea'); document.execCommand('copy'); humane.log('✅ Скопровано');"
                             class="btn btn-sm btn-primary">Hammasini belgilash (Выделить все)</button>
                     <button
-                            onclick="clear1()"
+                            onclick="clear1(); humane.log('✔ Removed');"
                             class="btn btn-sm btn-outline-danger">Tozalash (Очистить)</button>
                 </p>
                 <textarea

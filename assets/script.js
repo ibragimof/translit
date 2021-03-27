@@ -137,3 +137,5 @@ function onLatinTextChange(txt) {
                 textareaElems[i].value = "";
         }
 
+        
+         
